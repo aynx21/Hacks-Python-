@@ -1,0 +1,21 @@
+import pyautogui
+import time
+
+# Wait for the user to switch to the WhatsApp window
+print("Switch to the WhatsApp window in the next 10 seconds...")
+time.sleep(10)
+
+# Coordinates of the chat input box (replace with your own coordinates)
+chat_input_box_x = 500
+chat_input_box_y = 900
+
+# List of messages to send
+message = "Accessing encrypted database...\n"
+# Crafting the hacking message
+for i in range(20):
+    message += f"Progress: {i*5}% complete...\n"
+
+# Loop through the messages and send them
+pyautogui.click(x=chat_input_box_x, y=chat_input_box_y)  # Click on the chat input box
+pyautogui.write(message)
+pyautogui.press('enter')
